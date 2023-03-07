@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <div class="btm-nav">
+    <div class="btm-nav z-10">
         <button class="bg-pink-200 text-pink-600">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
           <span class="btm-nav-label">Home</span>
@@ -26,13 +26,96 @@
         </button>
       </div>
   </header>
+<!-- main section -->
 
-  <section>
-    <div class="grid grid-cols-2 gap-4">
-        <div>product listing</div>
-        <!-- ... -->
-        <div>09</div>
+  <section class="container mx-auto mt-10">
+    <div class="grid grid-cols-2 gap-6 pb-40 divide-x">
+        <div>
+            <div class="grid grid-cols-2 gap-4 ">
+
+                <!-- product 1 card left site -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="images/coffee normal.png" class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Normal Coffee</h2>
+                      <p>Price: $ <span>20</span></p>
+                      <div class="card-actions justify-end">
+                        <button class="btn bg-amber-900" onclick="addToCart(this)">Buy Now 1</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- product 2 card left site-->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="images/hot coffe.png" class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Hot Coffee</h2>
+                      <p>Price : $ <span>50</span></p>
+                      <div class="card-actions justify-end">
+                        <button class="btn bg-amber-900" onclick="addToCart(this)">Buy Now 2</button>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- product 3 card left site -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="images/love coffee.png" class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Love Coffee </h2>
+                      <p>Price: $ <span>80</span></p>
+                      <div class="card-actions justify-end">
+                        <button class="btn bg-amber-900" onclick="addToCart(this)">Buy Now 3</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- product 4 card left site-->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="images/Americano.coffee.png" class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Americano Coffee</h2>
+                      <p>Price: $ <span>180</span></p>
+                      <div class="card-actions justify-end">
+                        <button class="btn bg-amber-900" onclick="addToCart(this)">Buy Now 4</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- product 5 card left site-->
+                  <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="images/mocha coffee.png" class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Mocha Coffee</h2>
+                      <p>Price: $ <span>25</span></p>
+                      <div class="card-actions justify-end">
+                        <button class="btn bg-amber-900" onclick="addToCart(this)">Buy Now 5</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <!-- product 1 card right site -->
+       <div> <h5 class="text-center text-5xl">Total added Product 
+        
+        <span class="text-amber-900">0</span>
+
+            </h5>
+
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>price</th>
+                    
+                    </tr>
+                  </thead>
+                  
+                </table>
+              </div>
+    </div>
       </div>
   </section>
+
+  <script src="js/shopping.js"></script>
 </body>
 </html>
